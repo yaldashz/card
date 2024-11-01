@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    direction: rtl;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    background: linear-gradient(45deg, rgb(67, 24, 107), rgb(3, 3, 3));
+    /* background-color: #3b1b49; */
+    /* background-image: url('./img/240_F_433959577_W4kCZhvP9dVePoP83H5uUBicItF8W1Ds.jpg');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    >section{
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 600px;
+        padding-top: 160px;
+    }
+}
+
+.container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(45deg, blueviolet, deeppink); */
+    background-image: url(./img/240_F_433959577_W4kCZhvP9dVePoP83H5uUBicItF8W1Ds.jpg);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.4s ease-out;
+}
+
+.container .card-container .front .image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 50px;
+}
+
+.container .card-container .front .card-number-box{
+    direction: ltr;
+    padding: 30px 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.container .card-container .front .flexbox{
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-left: auto;
+}
+
+.container .card-container .front .flexbox .box{
+    font-size: 17px;
+    color: #fff;
+}
+
+.container .card-container .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/240_F_433959577_W4kCZhvP9dVePoP83H5uUBicItF8W1Ds.jpg);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: left;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-out;
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box{
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span{
+    color: #fff;
+    font-size: 17px;
+}
+
+.container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.container section .inputBox{
+    margin-top: 20px;
+}
+
+.container section .inputBox span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.container section .inputBox input,
+.container section .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #444;
+}
+
+.container section .flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.container section .flexbox .inputBox{
+    flex: 1 1 150px;
+}
+
+.container section .submit-btn{
+    width: 100%;
+    background: linear-gradient(45deg, rgb(67, 24, 107), rgb(3, 3, 3));
+    /* background: linear-gradient(45deg, blueviolet, deeppink); */
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container section .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.me{
+    color: white;
+    padding-top: 20px;
+}
